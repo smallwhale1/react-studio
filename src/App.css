@@ -1,9 +1,44 @@
 /* Add styling for your page here */
 
-.App {
+/* * {
+  margin: 0;
+  padding: 0;
+} */
 
+.App {
+  padding: 0 4rem;
+  display: flex;
 }
 
-.BakeryItem {
-  
+.cart-sidebar {
+  padding: 4rem;
+  min-width: 250px;
+}
+
+.bakery-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.bakery-item {
+  width: 100%;
+  height: 100%;
+}
+
+.bakery-image {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+
+.bakery-description {
+  padding: 1rem;
+}
+
+.price-add {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
